@@ -204,21 +204,9 @@ button:hover::after{
     <div id="result"></div>
 </div>
 
-<script>
-const btn = document.getElementById("getCoords");
-const result = document.getElementById("result");
 
-btn.addEventListener("click", () => {
-    result.classList.remove("show");
-    result.innerHTML = '<div class="loader"></div>';
-
-    setTimeout(() => {
-        result.innerHTML = "📍 Latitude: 40.7128° N <br> 📍 Longitude: 74.0060° W";
-        result.classList.add("show");
-    }, 1500);
-});
-</script>
 <script src="script.js"></script>
 </body>
 </html>
+
 
